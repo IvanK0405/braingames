@@ -1,22 +1,32 @@
 {
   "name": "idkozlov",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "myapp",
-  "main": "index.js",
+  "main": "brain-games.js",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "readline-sync": "^1.4.10"
   },
-  "devDependencies": {},
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.4.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IvanK0405/braingames.git",
+    "url": "git+https://github.com/IvanK0405/braingames.git"
+  },
   "files": [
     "dist"
   ],
-  "scripts": { "babel-node": "babel-node",
+  "scripts": {
+    "eslint": "eslint",
+    "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +34,5 @@
   "author": "Ivan",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
-  },
-  "license": "ISC"
+  }
 }
