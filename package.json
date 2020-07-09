@@ -1,0 +1,29 @@
+{
+  "name": "idkozlov",
+  "version": "0.0.2",
+  "description": "myapp",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanK0405/braingames.git",
+  "files": [
+    "dist"
+  ],
+  "scripts": { "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan",
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "license": "ISC"
+}
