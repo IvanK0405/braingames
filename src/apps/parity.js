@@ -1,5 +1,5 @@
 import readlineSync from "readline-sync";
-import { method, randomNumber} from "../../index";
+import { method, randomNumber} from "../index";
 
 function gameone () {
     const rules = 'Answer "yes" if number even otherwise answer "no".';

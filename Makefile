@@ -10,5 +10,8 @@ lint:
 even: 
 	sudo npm run babel-node -- src/bin/brain-even.js
 
+calc: 
+	sudo npm run babel-node -- src/bin/brain-calc.js
+
 pub: 
 	npm publish
