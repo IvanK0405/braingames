@@ -1,30 +1,29 @@
 {
   "name": "idkozlov",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "myapp",
   "main": "brain-games.js",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
+    "babel-node": "0.0.1-security",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
     "readline-sync": "^1.4.10"
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.10.4",
-    "@babel/core": "^7.10.4",
-    "@babel/node": "^7.10.4",
-    "@babel/preset-env": "^1.7.0",
-    "@babel/preset-stage-0": "^6.24.1",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-stage-0": "^7.8.3",
     "babel-eslint": "^10.1.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-plugin-import": "^2.22.0",
     "chokidar": "^3.4.0",
-    "eslint": "^7.4.0"
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0"
   },
   "repository": {
     "type": "git",
