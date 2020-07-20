@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import {userName, Welcome} from "../../index"
+import Welcome from '../index';
 
 Welcome();
-userName();
