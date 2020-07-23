@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import balance from '../apps/gcd';
+import balance from '../apps/balance';
 
 balance();
