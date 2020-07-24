@@ -22,5 +22,8 @@ balance:
 progress:
 	npm run babel-node -- src/bin/brain-progress.js
 
+prime:
+	npm run babel-node -- src/bin/brain-prime.js
+
 pub: 
 	npm publish
