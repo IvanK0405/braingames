@@ -1,24 +1,22 @@
 import readlineSync from 'readline-sync';
 import { method, randomNumber } from '../index';
+import { isprime } from '../engine';
 
 export default function prime() {
   const rules = 'Is this number prime?';
-  const priime = () => {
+  const primecheck = () => {
     let attempts;
     for (attempts = 0; attempts < 3; attempts += 1) {
-      const question = randomNumber(1, 100);
-      console.log(question);
-      const num = readlineSync.question('What is your answer? (y/n)');
-      if (question % 2 === 0 && num === 'y') {
+      const num = randomNumber(1, 100);
+      console.log(randomNumber(1, 100));
+      const rightAnswer = isprime(num) ? 'yes' : 'no';
+      const output = readlineSync.question('Your answer: ');
+      if (rightAnswer === output) {
         console.log('Correct!');
-      } else if (question % 2 === 0 && num === 'n') {
-        console.log('Correct!');
-      } else if ((question % 2 !== 0 && num === 'y') || (question % 2 === 0 && num === 'n')) {
-        console.log('Wrong answer!');
       } else {
-        console.log('It`s wrong input');
+        console.log('Wrong!');
       }
     }
   };
-  method(rules, priime);
+  method(rules, primecheck);
 }
