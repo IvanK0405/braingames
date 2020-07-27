@@ -8,7 +8,7 @@ export default function prime() {
     let attempts;
     for (attempts = 0; attempts < 3; attempts += 1) {
       const num = randomNumber(1, 100);
-      console.log(randomNumber(1, 100));
+      console.log(num);
       const rightAnswer = isprime(num) ? 'yes' : 'no';
       const output = readlineSync.question('Your answer: ');
       if (rightAnswer === output) {
