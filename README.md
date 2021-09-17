@@ -1,4 +1,7 @@
 # Braingames
+
+# Education 🎓
+
 Train you brains! 
 
 <a href="https://codeclimate.com/github/IvanK0405/braingames/maintainability"><img src="https://api.codeclimate.com/v1/badges/a72a04e3a685135ffe74/maintainability" /></a>
